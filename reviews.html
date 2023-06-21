@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="icon" href="images/logo.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?&family=Inter&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+      <title>LinguaSphere</title>
+  </head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#003162; font-size: 20px;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html"><img src="images/logo.png" alt="logo" style="height: 60px; width: 60px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav" style="margin-bottom: 5px;">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Teachers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="reviews.html">Reviews</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacts.html">Contacts</a>
+              </li>
+            </ul>
+             <p class="p1"><img src="https://cdn1.iconfinder.com/data/icons/modern-universal/32/icon-03-512.png" alt="phone" style="width: 20px; height: 20px; margin-bottom: 3px";>8-800-555-35-35</p>
+              <p class="p2"><img src="https://cdn.onlinewebfonts.com/svg/img_325673.png" alt="loc" style="width: 17px; height: 25px; margin-bottom: 3px; margin-right: 5px;">Mangilik El 55/11</p>
+              <button type="button" class="btn click " data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
+                <div class="text">Try a free lesson</div> 
+               </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Lesson Registration form</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="name" placeholder="Name...">
+                </div>
+                <div class="mb-3">
+                  <label for="surname" class="form-label">Surname</label>
+                  <input type="text" class="form-control" id="surname" placeholder="Surname...">
+                </div>
+                <div class="mb-3">
+                  <label for="telephone" class="form-label">Phone number</label>
+                  <input type="tel" class="form-control" id="telephone" aria-describedby="emailHelp"  placeholder="Phone number..." required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" pattern="[^ @]*@[^ @]*" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"  placeholder="E-mail...">
+                </div>
+                <div class="mb-3">
+                  <label for="socialstatus" class="form-label">Who are you?</label>
+                  <div class="dropdown">
+                    <select id="socialstatus" required>
+                      <option value="placehold">Select option...</option>
+                      <option value="student">College/university student</option>
+                      <option value="student">High/middle school student</option>
+                      <option value="parent">Parent</option>
+                      <option value="teacher">Teacher/instructor</option>
+                      <option value="indiv">Individual</option>
+                      <option value="company">Company</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="date" class="form-label">Date</label>
+                  <input type="date" min="2023-06-26" max="2023-07-30" class="form-control" id="date" aria-describedby="emailHelp"  placeholder="Date...">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">I agree with <a href="copyrights/TermsOfService.pdf" target="_blank">Terms of Service</a> and <a href="copyrights/PrivacyPolicy.pdf" target="_blank">Privacy Policy</a></label>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" onclick="closeModal()">Close</button>
+              <button type="button" class="btn btn-primary" onclick="validateForm()">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/index.js"></script>
+
+      <section style="background-color: #003162; font-size: smaller; padding-bottom: 30px;" id="comments">
+        <div class="row w-90" style="margin-left: auto; margin-right: auto; padding-top: 10px; padding-bottom: 10px;">
+          <h1 style=" color: white; text-align: center;">Reviews</h1>
+        </div>
+        <div class="row w-90 par">
+          <div class="col comments">
+            <h4>Student1  <img src="" alt="" style="width: 50px; height: 50px; border-radius: 100%;"></h4>
+            <p>Text</p>
+          </div>
+          <div class="col comments">
+            <h4>Student2  <img src="" alt="" style="width: 50px; height: 50px; border-radius: 100%;"></h4> 
+             <p>Text</p> 
+          </div>
+          <div class="col comments">
+            <h4>Student3  <img src="" alt="" style="width: 50px; height: 50px; border-radius: 100%;"></h4>
+            <p>Text</p>
+          </div>
+        </div>
+      </section>
+
+  <footer style=" background-color: #FF7F00;">
+    <div class="container" >
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="social-icons">
+            <a href="https://github.com/kosiskasiller" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://discord.com/" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://ru-ru.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://telegram.org/" target="_blank"><i class="fab fa-telegram"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-2 text-center">
+          <span class="footer-menu">
+            <a href="copyrights/TermsOfService.pdf" target="_blank">Terms of Service</a><br>
+            <a href="copyrights/PrivacyPolicy.pdf" target="_blank">Privacy Policy</a><br>
+            <a href="copyrights/CookiePolicy.pdf" target="_blank">Cookie Policy</a>
+          </span>
+        </div>
+      </div>
+
+<br>
+      <div class="row">
+        <div class="col-md-12">
+          <p style="color:aliceblue; font-size: 16px;">&copy; LinguaSphere. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
