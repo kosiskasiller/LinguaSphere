@@ -161,3 +161,7 @@
       border-color: rgb(212, 212, 212);
       border-radius: 2%;
     }
+
+    .checked{
+        color:#FF7F00;
+    }
