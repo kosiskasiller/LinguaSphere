@@ -187,3 +187,18 @@ font-size: smaller;
     border-color: rgb(212, 212, 212);
     border-radius: 2%;
   }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #ddd;
+  border-collapse: collapse;
+  }
+  
+  tr:nth-child(1){background-color: #FF7F00}
