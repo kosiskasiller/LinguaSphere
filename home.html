@@ -380,7 +380,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-
+    <script>
+      document.addEventListener('keypress', function(event) {
+        if (event.keyCode === 13 || event.which === 13) {
+          alert('Need help? Message us on linguaspherehelp@gmail.com.');
+        }
+      });</script>
 
   </body>
 </html>

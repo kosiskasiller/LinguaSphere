@@ -69,6 +69,7 @@ function validateForm() {
 
 
   clearForm();
+  closeModal();
 
 }
 
@@ -89,3 +90,5 @@ function closeModal() {
   var modalInstance = bootstrap.Modal.getInstance(modal);
   modalInstance.hide();
 }
+
+

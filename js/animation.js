@@ -1,8 +1,10 @@
-function animateButton() {
-    var button = document.getElementById('aniButton');
-    button.style.transform = 'scale(1.2)';
+var button = document.getElementById('aniButton');
 
-    setTimeout(function() {
-      button.style.transform = 'scale(1)';
-    }, 300);
-  }
+button.addEventListener('mouseover', function() {
+  button.style.transform = 'scale(1.2)';
+});
+
+button.addEventListener('mouseout', function() {
+  button.style.transform = 'scale(1)';
+});
+
