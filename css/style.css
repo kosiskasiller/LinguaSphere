@@ -4,13 +4,12 @@
 }
 
 .click{
-    border: none;
-    margin-bottom: 3px;
-    color: white;
-    border-radius: 20px;
-    border: 1px solid #011a33;
-
-
+  border: none;
+  margin-bottom: 3px;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid #ff7f00;
+  background-color: #ff7f00;
 }
 .p1{
      color: white;
@@ -26,9 +25,8 @@
      font-size: medium;
 }
 .click:hover{
-    background-color: transparent;
-    background-color: #003162;
-    
+  background-color: transparent;
+  background-color: #cf6903;   
 }
 
 .click2:hover{
@@ -45,9 +43,6 @@
 }
 .text{
     color: white;
-}
-.text:hover{
-    color: #FF7F00;
 }
 
 .comments{
